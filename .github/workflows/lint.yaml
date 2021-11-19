@@ -2,6 +2,10 @@ name: Lint application on Ubuntu latest on Node 16
 
 on:
   workflow_call:
+    inputs:
+      app-registry:
+        default: false
+        type: boolean
 
 jobs:
   lint:
@@ -15,6 +19,10 @@ jobs:
 
       - name: Install yarn packages (from cache if available)
         run: yarn
+
+      - name: Intialize app-registry
+        run: yarn init-appregistry
+        if: app-registry
 
       - name: Run linter
         run: NODE_ENV=production yarn lint
