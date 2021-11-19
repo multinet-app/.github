@@ -22,7 +22,7 @@ jobs:
 
       - name: Intialize app-registry
         run: yarn init-appregistry
-        if: app-registry
+        if: inputs.app-registry
 
       - name: Run linter
         run: NODE_ENV=production yarn lint
