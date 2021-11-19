@@ -25,4 +25,4 @@ jobs:
         if: inputs.app-registry
 
       - name: Run linter
-        run: NODE_ENV=production yarn lint
+        run: yarn lint
