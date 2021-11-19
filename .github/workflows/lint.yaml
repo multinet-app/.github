@@ -11,20 +11,10 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: 16
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Attempt to restore yarn cache (location where yarn packages are downloaded to)
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+          cache: 'yarn'
 
       - name: Install yarn packages (from cache if available)
-        run: yarn --prefer-offline
+        run: yarn
 
       - name: Run linter
         run: NODE_ENV=production yarn lint
