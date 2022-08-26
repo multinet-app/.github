@@ -20,7 +20,7 @@ jobs:
       - name: Install yarn packages (from cache if available)
         run: yarn
 
-      - name: Intialize app-registry
+      - name: Initialize app-registry
         run: yarn init-appregistry
         if: inputs.app-registry
 
