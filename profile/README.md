@@ -12,8 +12,6 @@ You can visit our deployment by visiting https://multinet.app.
 
 We'll happily accept community contributions. Open an issue or a pull request to help us out!
 
-### Addtional Resources
+### Additional Resources
 
 Our documentation can be viewed by visiting https://docs.multinet.app.
-
-
