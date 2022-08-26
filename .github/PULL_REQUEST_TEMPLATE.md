@@ -8,6 +8,6 @@ Closes #
 
 
 ### Are there any additional TODOs before this PR is ready to go?
-
 TODOs:
+- [ ] Update relevant documentation
 - [ ] ...
