@@ -18,7 +18,7 @@ jobs:
           cache: 'yarn'
 
       - name: Install yarn packages (from cache if available)
-        run: yarn
+        run: yarn install --immutable
 
       - name: Initialize app-registry
         run: yarn init-appregistry
