@@ -1,4 +1,4 @@
-<img title="MultiNet Logo" alt="MultiNet Logo" width="100" height="100" src="https://multinet.app/img/app_logo.50ccaad7.svg">
+<img title="MultiNet Logo" alt="MultiNet Logo" width="100" height="100" src="https://avatars.githubusercontent.com/u/47539225?s=100&v=4">
 
 ## MultiNet
 
